@@ -1,0 +1,56 @@
+@import 'vars'
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+img
+    max-width: 100%
+    display: block
+button
+    padding: 10px 20px
+    font-size: 1rem
+    text-transform: uppercase
+    letter-spacing: 1px
+    color: #333
+    font-weight: 600
+    background: linear-gradient(-25deg, lightgreen, darken(lightgreen, 30))
+    cursor: pointer
+    outline: none
+    border: 1px solid darken(lightgreen, 30)
+    border-radius: 4px
+    transition: 0.3s
+    &:hover
+        background: linear-gradient(-25deg, lightgreen, lightgreen)
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3)
+    &:active
+        box-shadow: none
+html
+    font-size: 16px
+body
+    width: 100%
+    min-height: 100vh
+    font-family: sans-serif
+    font-size: 1rem
+    display: flex
+    flex-direction: column
+    overflow-x: hidden
+.main
+    flex: auto
+.container
+    margin: 0 auto
+    padding: 0 20px
+    max-width: 1440px
+.overlay
+    width: 100%
+    height: 100vh
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 5
+    background: rgba(0, 0, 0, 0.4)
+    opacity: 0
+    transition: opacity 0.6s
+    @media screen and ( min-width: $breackpoint )
+        display: none
+    &._active
+        opacity: 1
