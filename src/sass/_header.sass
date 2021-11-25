@@ -1,3 +1,55 @@
 @import 'vars'
 .header
     width: 100%
+    padding: 24px 0
+    &__body
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__logo
+        width: 40px
+        height: 40px
+        svg
+            width: 40px
+            height: 40px
+    &__menu
+        width: 254px
+        height: 100vh
+        background: rgba(255, 255, 255, 0.04)
+        backdrop-filter: blur(81.5485px)
+        position: fixed
+        top: 0
+        right: -100%
+        z-index: 100
+        padding: 86px 32px 32px 32px
+        transition: 0.6s
+        &._active
+            right: 0
+        ul
+            list-style: none
+            li
+                margin: 32px 0
+                a
+                    color: #FFFFFF
+                    text-decoration: none
+                    font-family: BarlowCondensed
+                    font-size: 16px
+                    font-weight: 400
+                    line-height: 19.2px
+                    letter-spacing: 2.7px
+                    text-transform: uppercase
+                    span
+                        font-family: BarlowCondensedBold
+                        font-weight: 700
+        .btn__close
+            width: 19.09px
+            height: 19.09px
+            position: absolute
+            top: 33.95px
+            right: 26.45px
+            svg
+                width: 100%
+                height: 100%
+    &__burger
+        width: 24px
+        height: 21px

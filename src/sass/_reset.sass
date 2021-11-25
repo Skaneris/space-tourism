@@ -6,20 +6,27 @@
 img
     max-width: 100%
     display: block
-html
-    font-size: 16px
 body
     width: 100%
     min-height: 100vh
-    font-family: sans-serif
-    font-size: 1rem
     display: flex
     flex-direction: column
     overflow-x: hidden
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
     &.home
         background-image: url(../images/home/background-home-mobile.jpg)
+        color: $purple
+    &.destination
+        background-image: url(../images/destination/background-destination-mobile.jpg)
+    &.crew
+        background-image: url(../images/crew/background-crew-mobile.jpg)
+    &.technology
+        background-image: url(../images/technology/background-technology-mobile.jpg)
 .main
     flex: auto
+    display: flex
 .container
     margin: 0 auto
     padding: 0 24px
