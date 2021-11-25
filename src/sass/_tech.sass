@@ -1,0 +1,42 @@
+@import 'vars'
+.tech
+    &__image
+        margin: 0 0 26px 0
+        width: 100%
+        display: flex
+        justify-content: center
+        img
+            &.portrait
+                display: none
+    &__info
+    &__nav
+        margin: 0 0 20px 0
+        display: flex
+        justify-content: center
+        button
+            width: 40px
+            height: 40px
+            font-family: Bellefair
+            font-weight: 400
+            font-size: 16px
+            line-height: 16px
+            text-transform: uppercase
+            color: #FFFFFF
+            background: none
+            border: none
+            margin: 0 8px
+            border: 1px solid rgba(255, 255, 255, 0.5)
+            border-radius: 50%
+            &.active
+                color: $darkblue
+                background: #FFFFFF
+    &__content
+        text-align: center
+        h1
+            font-size: 24px
+            line-height: 28px
+        h3
+            font-size: 14px
+            line-height: 17px
+            letter-spacing: 2.3625px
+            color: $purple
